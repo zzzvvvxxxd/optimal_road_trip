@@ -75,7 +75,7 @@ def shuffle_mutation(agent_genome):
     #length ?= start_index 则不变异?
     genome_subset = agent_genome[start_index:start_index + length]
     agent_genome = agent_genome[:start_index] + agent_genome[start_index + length:]
-    
+
     insert_index = random.randint(0, len(agent_genome) + len(genome_subset) - 1)
     agent_genome = agent_genome[:insert_index] + genome_subset + agent_genome[insert_index:]
 
