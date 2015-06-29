@@ -2,9 +2,12 @@
 # coding=utf-8
 __author__ = 'bulu_dog'
 
-import googlemaps
 from itertools import combinations
-from way_points import all_waypoints
+
+import googlemaps
+
+from util.way_points import all_waypoints
+
 waypoint_distances = {}
 waypoint_durations = {}
 
